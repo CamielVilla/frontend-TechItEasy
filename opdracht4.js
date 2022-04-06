@@ -13,9 +13,20 @@ function formatPrice(tvPrice) {
 
 console.log(formatPrice(inventory[0].price));
 
-//4b
+//4c
 function showScreenSizes (tvScreen) {
-    for (let i = 0; i < tvScreen.availableSizes.length; i++) {
-
+    const tvScreenSizes = [];
+    for (let i = 0; i < tvScreen.length; i++) {
+   tvScreenSizes.push(tvScreen[i] + " inch (" + Math.round(tvScreen[i] * 2.54) + "cm)");
     }
+    return tvScreenSizes;
 }
+
+console.log(showScreenSizes(inventory[1].availableSizes));
+console.log(showScreenSizes(inventory[3].availableSizes));
+
+//4d
+const tvSpecs = document.createElement(`p`);
+tvSpecs.textContent = tvToString(inventory[0]);
+const showTvSpecs = document.getElementById("size-of-one-tv");
+showTvSpecs.appendChild(tvSpecs);
