@@ -12,3 +12,10 @@ function formatPrice(tvPrice) {
 }
 
 console.log(formatPrice(inventory[0].price));
+
+//4b
+function showScreenSizes (tvScreen) {
+    for (let i = 0; i < tvScreen.availableSizes.length; i++) {
+
+    }
+}
