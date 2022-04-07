@@ -56,4 +56,4 @@ function showAllTvs(tvArray) {
         showAllTvSpecs.appendChild(tvScreen);
     }
 }
-//showAllTvs(inventory);
+showAllTvs(inventory);
