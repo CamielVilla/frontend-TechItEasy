@@ -10,9 +10,7 @@ function sortTvsOnPrice (tvArray) {
 };
 
 function showAllAmbilightTvs(tvArray) {
-    const ambilightTvs = tvArray.filter((tv) => {
-        return tv.options.ambiLight === true;
-    })
+    const ambilightTvs = tvArray.filter(tv => tv.options.ambiLight)
     console.log(ambilightTvs)
 
     for (let i = 0; i < ambilightTvs.length; i++) {
